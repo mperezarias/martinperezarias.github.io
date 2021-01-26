@@ -164,14 +164,14 @@ body{
     display: block;
     width: 100%;
     height: 20px;
-    background: linear-gradient(to bottom, #00000099, transparent);
+    background: linear-gradient(to bottom, #111111be, transparent);
 }
 
 .bottombar{
     display: block;
     width: 100%;
     height: 20px;
-    background: linear-gradient(to bottom, transparent, #00000099);
+    background: linear-gradient(to bottom, transparent, #111111be);
 }
 
 /* BACKGROUNDCOLOR */
@@ -223,7 +223,7 @@ body{
 .form-cont{
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
-    grid-template-rows: repeat(5, 60px);
+    grid-template-rows: repeat(5, 62px);
     /* padding-bottom: 10px; */
 }
 
@@ -385,7 +385,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-weight: bold;
-    text-shadow: 3px 3px 3px #22222295;
+    text-shadow: 3px 3px 5px #00000095;
 }
 
 
@@ -438,7 +438,7 @@ body{
 
 
 .flex-info i:hover, p:hover{
-    text-shadow: 1px 1px 5px #22222295;
+    text-shadow: 3px 3px 5px #00000095;
 }
 
 
@@ -618,6 +618,7 @@ body{
         padding: 7px 0 7px 0px;
     }
 
+    
     .check, .spinner{
         margin: 18px 0 18px 0;
     }
@@ -727,17 +728,19 @@ body{
 
 
 
-
 @media (max-width: 460px){
 
     .form-cont{
-        grid-template-rows: repeat(5, 70px);
+        grid-template-rows: repeat(5, auto);
     }
 
     .school,.job,.degree{
-        margin: 15px 0 5px 0;
+        margin: 15px 0 15px 0;
     }
 
+    .eng{
+        margin: 5px 0 18px 0;
+    }
     .detail{
         margin-top: 10px;
     }
@@ -772,7 +775,7 @@ body{
 @media (max-width: 380px){
 
     .school,.job,.degree{
-        margin: 5px 0 5px 0;
+        margin: 5px 0 12px 0;
     }
 
     .box{
@@ -795,4 +798,25 @@ body{
         padding-top: 38px;
         font-size: 15px;
     }
+}
+
+
+@media (max-width:330px){
+    
+    .litem{
+        font-size: 13px;
+    }
+
+    .eng{
+        margin-top: 13px;
+    }
+
+    .check{
+        margin-top: 12px;
+    }
+
+    .spinner{
+        margin-top: 18px;
+    }
+
 }
