@@ -223,7 +223,7 @@ body{
 .form-cont{
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
-    grid-template-rows: repeat(5, 62px);
+    grid-template-rows: repeat(5, auto);
     /* padding-bottom: 10px; */
 }
 
@@ -278,7 +278,7 @@ body{
 }
 
 .check, .spinner{
-    margin: 20px 0 20px 0;
+    margin: 18px 0 18px 0;
 }
 
 /* LOADING ANIMATION */
@@ -620,7 +620,7 @@ body{
 
     
     .check, .spinner{
-        margin: 18px 0 18px 0;
+        margin: 15px 0 18px 0;
     }
 
 
@@ -746,7 +746,7 @@ body{
     }
 
     .check{
-        margin: 22px 0 22px 0;
+        margin: 8px 0 22px 0;
     }
 
     .spinner{
@@ -798,6 +798,11 @@ body{
         padding-top: 38px;
         font-size: 15px;
     }
+
+    .check{
+        margin: 8px 0 28px 0;
+    }
+
 }
 
 
@@ -808,15 +813,14 @@ body{
     }
 
     .eng{
-        margin-top: 13px;
-    }
-
-    .check{
         margin-top: 12px;
     }
 
-    .spinner{
-        margin-top: 18px;
+    .check{
+        margin: 12px 0 28px 0;
     }
 
+    .spinner{
+        margin: 0px;
+    }
 }
