@@ -206,6 +206,29 @@ body{
     cursor: default;
 }
 
+
+.subtitle,.top-list.achive{
+    animation-name: expose;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border: solid 1px transparent;
+}
+
+@keyframes expose {
+    0%{
+
+    }
+    50%{
+        /* background-color: transparent; */
+        border: solid 1px #cf3333;
+    }
+    100%{
+
+    }
+      
+}
+
 .container{
     width: 90%;
     margin: auto;
@@ -228,12 +251,12 @@ body{
 }
 
 .top-list{
-    border-top: solid #E2E2E220;
-    border-bottom: solid #E2E2E220;
+    border-top: solid 1px #E2E2E220;
+    border-bottom: solid 1px #E2E2E220;
 }
 
 .top-list.af{
-    border-left: solid #E2E2E220;
+    border-left: solid 1px #E2E2E220;
 }
 
 .form-list{
