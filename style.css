@@ -15,6 +15,8 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-image: url(/images/bodybg0.jpg);
+    background-size: contain;    
 }
 
 /*NAV SECTION*/
@@ -73,7 +75,6 @@ body{
     display: inline-block;  
     position: relative;
     left: auto;
-
 }
 
 .navbar .menu li a{
@@ -159,12 +160,28 @@ body{
     box-shadow: 15px 10px 3px #00000050; 
 }
 
-
-.form-div{
-    background-color: #333;
+.middlebar{
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, #00000099, transparent);
 }
 
-/* COMMON TITLES */
+.bottombar{
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, #00000099);
+}
+
+/* BACKGROUNDCOLOR */
+
+.form-div,.apt-lab, .apt-pers{
+    background-color: #333333c0;
+}
+
+
+/* COMMON */
 
 .title{
     font-family: 'Poppins',sans-serif;
@@ -175,6 +192,8 @@ body{
     background-color: #E2E2E250;
     text-shadow: 3px 3px 5px #00000095;
     color: #E2E2E2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .subtitle, .top-list{
@@ -186,6 +205,18 @@ body{
     text-shadow: 3px 3px 5px #00000095;
     cursor: default;
 }
+
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-div,.apt-lab,.apt-pers{
+    border-radius: 8px;
+}
+
 
 /* FORMATION SECTION */
 
@@ -208,7 +239,7 @@ body{
 .form-list{
     color: #E2E2E2;
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .form-list li{
@@ -266,9 +297,9 @@ body{
 /* APT SECTION */
 
 .apt-lab, .apt-pers{
-    background-color: #333;
     color: #E2E2E2;
     font-family: 'Poppins',sans-serif;
+    border-radius: 5px;
 }
 
 .apt-grid{
@@ -571,6 +602,16 @@ body{
         transform: rotate(45deg) translate(-5px,-6px);        
     }
 
+    .middlebar, .bottombar{
+        height: 20px;
+    }
+
+    .container{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
 
     .litem{
         font-size: 16px;
@@ -701,8 +742,12 @@ body{
         margin-top: 10px;
     }
 
-    .check, .spinner{
+    .check{
         margin: 22px 0 22px 0;
+    }
+
+    .spinner{
+        margin: 10px 0 10px 0;
     }
 
     .apt-grid{
