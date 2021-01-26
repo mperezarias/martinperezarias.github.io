@@ -1,5 +1,6 @@
 // NAVBAR STICKY
 
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if (scrollY > 20){
@@ -12,17 +13,43 @@ $(document).ready(function(){
     })
 });
 
-// BLURRY TEXT
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if (scrollY > 160){
-        $('.resume').addClass('blur');
-        }else{
-            $('.resume').removeClass('blur');
-        }
-    })
+
+// BLURRY TEXT RESPONSIVE
+
+
+window.addEventListener('scroll', () =>{
+    var widthsize = $(window).width();
+    var heightsize = $(window).height();
+
+    if (widthsize > 700 && heightsize > 500){
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if (scrollY > 160){
+                $('.resume').addClass('blur');
+                }else{
+                    $('.resume').removeClass('blur');
+                }
+            })
+        });
+    }else{
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if (scrollY > 280){
+                $('.resume').addClass('blur');
+                }else{
+                    $('.resume').removeClass('blur');
+                }
+            })
+        });
+    }
 });
+
+
+
+  
+
+
 
 
 // NAME HIGHLIGHT
@@ -217,4 +244,7 @@ det.addEventListener('click', ()=>{
             de.classList.toggle('hidden'),
         );
 });
+
+
+
 
