@@ -154,12 +154,12 @@ var angtext = document.querySelector('.angtext');
 var barang = document.querySelector('.angprogress');
 
 document.querySelector('.c img').addEventListener('click', ()=>{
-    move(cb,ctext,barc, 70);
+    move(cb,ctext,barc, 60);
 });
 
 
 document.querySelector('.cpp img').addEventListener('click', ()=>{
-    move(cppb,cpptext,barcpp, 75);
+    move(cppb,cpptext,barcpp, 65);
 });
 
 document.querySelector('.html img').addEventListener('click', ()=>{
