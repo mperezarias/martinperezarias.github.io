@@ -178,9 +178,19 @@ document.querySelector('.angular img').addEventListener('click', ()=>{
 
 //OWL CAROUSEL SCRIPT
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
-  });
+$(document).ready(function() {
+ 
+    $(".owl-carousel").owlCarousel({
+        items:3,
+        loop:true,
+        autoplay: true,
+        slideTransition: 'ease-in-out',
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1500,
+        autoplayHoverPause: true
+    });
+});
+
 
 //RESPONSIVE MENU
 
