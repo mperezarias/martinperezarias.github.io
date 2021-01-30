@@ -1,53 +1,51 @@
 // NAVBAR STICKY
 
 
-$(document).ready(function(){
-    $(window).scroll(function(){
+function navbarsticky(){
+    window.addEventListener('scroll', () =>{
         if (scrollY > 20){
-        $('.navbar').addClass('sticky');
-        $('.menu').addClass('sticky');
+        document.querySelector('.navbar').classList.add('sticky');
+        document.querySelector('.menu').classList.add('sticky');
         }else{
-            $('.navbar').removeClass('sticky');
-            $('.menu').removeClass('sticky');
+            document.querySelector('.navbar').classList.remove('sticky');
+            document.querySelector('.menu').classList.remove('sticky');
         }
-    })
-});
+    });
+}
 
-
+window.onload = navbarsticky();
 
 // BLURRY TEXT RESPONSIVE
 
 
-window.addEventListener('scroll', () =>{
-    var widthsize = $(window).width();
-    var heightsize = $(window).height();
+function responsiveblur(){
+    window.addEventListener('scroll', () =>{
+        var widthsize = window.innerWidth;
+        var heightsize = window.innerHeight;
 
-    if (widthsize > 700 && heightsize > 500){
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if (scrollY > 160){
-                $('.resume').addClass('blur');
-                }else{
-                    $('.resume').removeClass('blur');
-                }
-            })
-        });
-    }else{
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if (scrollY > 280){
-                $('.resume').addClass('blur');
-                }else{
-                    $('.resume').removeClass('blur');
-                }
-            })
-        });
-    }
-});
+        if (widthsize > 700 && heightsize > 500){
+            window.addEventListener('scroll', () =>{
+                    if (scrollY > 160){
+                    document.querySelector('.resume').classList.add('blur');
+                    }else{
+                        document.querySelector('.resume').classList.remove('blur');
+                    }
+                });
+            }
+        else{
+            window.addEventListener('scroll', () =>{
+                    if (scrollY > 280){
+                        document.querySelector('.resume').classList.add('blur');
+                    }else{
+                        document.querySelector('.resume').classList.remove('blur');
+                    }
+                });
+            }
 
+    });
+}
 
-
-  
+window.onload = responsiveblur();
 
 
 
