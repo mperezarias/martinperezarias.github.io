@@ -738,7 +738,7 @@ body{
 
     .textatp{
         padding-top: 5px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .col2{
@@ -802,13 +802,17 @@ body{
     }
 
     .box{
-        height: 90px;
-        width: 90px;           
+        height: 95px;
+        width: 95px;           
     }
 
     .owl-carousel .card img{
         height: 30px;
         width: 30px;   
+    }
+
+    .textatp{
+        font-size: 10px;
     }
 
 
