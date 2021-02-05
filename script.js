@@ -173,7 +173,7 @@ document.querySelector('.js img').addEventListener('click', ()=>{
 });
 
 document.querySelector('.angular img').addEventListener('click', ()=>{
-    move(angb,angtext,barang, 15);
+    move(angb,angtext,barang, 25);
 });
 
 //OWL CAROUSEL SCRIPT
